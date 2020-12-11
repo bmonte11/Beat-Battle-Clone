@@ -5,6 +5,9 @@ const Track = db.define('track', {
   title: {
     type: Sequelize.STRING
   },
+  description: {
+    type: Sequelize.TEXT
+  },
   upvote: {
     type: Sequelize.INTEGER,
     defaultValue: 0
@@ -14,3 +17,5 @@ const Track = db.define('track', {
     defaultValue: 0
   }
 })
+
+module.exports = Track
